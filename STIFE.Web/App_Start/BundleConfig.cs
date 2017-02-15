@@ -27,8 +27,8 @@ namespace STIFE.Web
                 "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                 "~/Content/bootstrap.css",
-                 "~/Content/Site.css"));
+                 "~/Content/css/bootstrap.css",
+                 "~/Content/css/Site.css"));
 
 #if DEBUG
             BundleTable.EnableOptimizations = false;
