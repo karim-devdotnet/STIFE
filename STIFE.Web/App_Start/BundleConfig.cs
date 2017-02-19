@@ -10,9 +10,9 @@ namespace STIFE.Web
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                 "~/Scripts/jquery-{version}.js",
                 "~/Scripts/bootstrap.js",
-                "~/Scripts/jquery.mb.YTPlayer.js",
-                "~/Scripts/jquery.easing.min.js",
-                "~/Scripts/custom.js"));
+                "~/Scripts/app/jquery.mb.YTPlayer.js",
+                "~/Scripts/app/jquery.easing.min.js",
+                "~/Scripts/app/custom.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                 "~/Scripts/jquery.unobtrusive*",
@@ -28,6 +28,7 @@ namespace STIFE.Web
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                  "~/Content/css/bootstrap.css",
+                 "~/Content/css/bootstrap-custom.css",
                  "~/Content/css/Site.css"));
 
 #if DEBUG

@@ -1,0 +1,19 @@
+﻿.btn-custom {
+    display: inline-block;
+    font-size: 15px;
+    color: #f1f1f1;
+    border: 2px solid #f1f1f1;
+    text-transform: uppercase;
+    margin: 5px 2px 5px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-custom:hover, .btn-custom:active, .btn-custom:focus {
+    color: #f1f1f1;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.container-fluid {
+     padding-right: 0px !important; 
+     padding-left: 0px !important; 
+}

@@ -1,4 +1,46 @@
-﻿
+﻿/*================================
+    LOADING STYLES
+==================================*/
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  z-index:9999;
+}
+/* Center the loader */
+#loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 /*================================
     GENERAL STYLES
 ==================================*/
@@ -22,11 +64,12 @@ section {
 .pad-bottom {
     padding-bottom: 60px;
 }
+
 /*================================
     NAVBAR STYLES
 ==================================*/
 .navbar-default {
-    background-color: #fff; /*rgb(35, 133, 161);*/
+    background-color: rgba(255, 255, 255, .75); /*rgb(35, 133, 161);*/
     border-color: #f8f8f8;
     color: #000000;
     /*height:65px;
@@ -37,7 +80,7 @@ section {
     color: rgb(35, 133, 161);
 }
 
-.nav-tabs > li > a {
+.navbar-nav > li > a {
     padding:20px;
 }
 .navbar-brand {
@@ -57,7 +100,7 @@ section {
 
 /*STYLE OF BACKGROUND IMAGE*/
 #home {
-    background: url(../img/home.jpg) no-repeat center center; /*Full Witdth background image*/
+    background: url(../img/home.png) no-repeat center center; /*Full Witdth background image*/
     padding: 0;
     -webkit-background-size: cover;
     background-size: cover;
@@ -66,18 +109,31 @@ section {
 }
     /*STYLE FOR OVERLAY CLASS - WHICH IS ABOVE IMAGE WITH OPACITY/TRANSPARENCY 0.75*/
     #home .overlay {
-        padding-top: 90px;
-        background-color: rgba(35, 133, 161,0.75); /*.75 opacity of the color so that background image is visible*/
+        padding-top: 300px;
+        background-color: rgba(0, 0, 0,0.6)  /*rgba(35, 133, 161,0.3)*/; /*.3 opacity of the color so that background image is visible*/
         min-height: 600px;
         color: #fff;
     }
 
-    #home h1 {
-        padding-top: 80px;
-        font-weight: 900;
-        font-size: 100px;
-        font-family: 'Browallia New';
-    }
+#home h1 {font-weight: 900; font-family: 'Browallia New';}
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 500ms;
+  animation-name: animatebottom;
+  animation-duration: 500ms;
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
 /*SMPLE CLASS TO ADJUST SECTION PADDING & HEIGHT*/
 
 
