@@ -18,9 +18,12 @@ $(document).ready(function () {
         event.preventDefault();
         });
     // BACKGROUND VIDEO SCRIPTS
-        $(function () {
-            $(".player").mb_YTPlayer(); // .player - class to add for playing video ( see the div above to understand)
-        });
+        //$(function () {
+        //    $(".player").mb_YTPlayer(); // .player - class to add for playing video ( see the div above to understand)
+    //});
+        if (!jQuery.browser.mobile) {
+            $(".player").mb_YTPlayer();
+        }
 
     //LOADING
     window.onload = function () {
