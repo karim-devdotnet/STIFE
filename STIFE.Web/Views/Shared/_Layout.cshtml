@@ -1,4 +1,5 @@
 ﻿@using STIFE.Web.Resources
+@using i18n
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +8,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <link href="~/Content/img/logo.png" rel="shortcut icon" type="image/x-icon" />
-    <title>STIFE - STE TUNISO-ITALIENNE DE FRIPERIE ET EFFILOCHAGE</title>
+    <title>STIFE - [[[Tuniso-Italien company to export an import used clothes]]]</title>
     <!--[if IE]>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <![endif]-->
@@ -18,6 +19,9 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
+    @{ 
+        KeyValuePair<string, i18n.LanguageTag>[] langs = LanguageHelpers.GetAppLanguages().OrderBy(x => x.Key).ToArray();
+    }
     <div class="loader text-center">
         <div id="loading"></div>
     </div>
@@ -35,13 +39,33 @@
             </div>
             <div class="navbar-collapse collapse navbar-right scroll-me">
                 <ul class="nav navbar-nav">
-                    <li><a href="#home">@Resource.HOME</a></li>
-                    <li><a href="#about">@Resource.ABOUT</a></li>
+                    <li><a href="#home">[[[Home]]]</a></li>
+                    <li><a href="#about">[[[About]]]</a></li>
                     @*<li><a href="#services">SERVICES</a></li>*@
                     @*<li><a href="#works">WORKS</a></li>*@
-                    <li><a href="#team">@Resource.TEAM</a></li>
-                    <li><a href="#contact">@Resource.CONTACT</a></li>
-                    <li><a href="#impressum">@Resource.IMPRESSUM</a></li>
+                    <li><a href="#team">[[[Team]]]</a></li>
+                    <li><a href="#contact">[[[Contact]]]</a></li>
+                    <li><a href="#impressum">[[[Impressum]]]</a></li>
+                    @for (int i = 0; i < langs.Length; i++)
+                    {
+                        string langtag;
+                        string title;
+                        string nativelangname;
+                        i18n.LanguageTag lt = langs[i].Value;
+                        title = lt.NativeNameTitleCase;
+                        nativelangname = langtag = lt.ToString().ToUpper();
+                        if (!string.IsNullOrEmpty(title))
+                        {
+                            if (Context.GetPrincipalAppLanguageForRequest().GetNativeNameTitleCase() == title)
+                            {
+                                <li><a><u>@nativelangname</u></a></li>
+                            }
+                            else
+                            {
+                                <li><a title="@title" href="@Url.Action("SetLanguage", "Home", new { langtag = langtag, returnUrl = Request.Url })">@nativelangname</a></li>
+                            }
+                        }
+                    }
                 </ul>
             </div>
         </div>

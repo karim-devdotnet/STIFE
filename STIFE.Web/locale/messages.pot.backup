@@ -1,0 +1,124 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2017-02-26 16:32+01:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: i18n.POTGenerator\n"
+
+#: Views\Shared\_Layout.cshtml:43
+msgid "About"
+msgstr ""
+
+#: Views\Home\Index.cshtml:35
+msgid "About Us"
+msgstr ""
+
+#: Views\Home\Index.cshtml:64
+msgid "All this ambled the company to take the lead in this field by starting production lines and whole planes that offer hundreds items."
+msgstr ""
+
+#: Views\Home\Index.cshtml:130
+msgid "Comment"
+msgstr ""
+
+#: Views\Shared\_Layout.cshtml:47
+msgid "Contact"
+msgstr ""
+
+#: Views\Home\Index.cshtml:109
+msgid "Contact Us"
+msgstr ""
+
+#: Views\Home\Index.cshtml:127
+msgid "Email"
+msgstr ""
+
+#: Views\Home\Index.cshtml:92
+msgid "Employees"
+msgstr ""
+
+#: Views\Shared\_Layout.cshtml:42
+msgid "Home"
+msgstr ""
+
+#: Views\Shared\_Layout.cshtml:48
+msgid "Impressum"
+msgstr ""
+
+#: Views\Home\Index.cshtml:51
+msgid "It has stapelt towards prosperity and offered the best to reach an international standards and accorders with modern civilization."
+msgstr ""
+
+#: Views\Home\Index.cshtml:76
+msgid "Items"
+msgstr ""
+
+#: Views\Home\Index.cshtml:50
+msgid "Its a story of pioneering that have a lot of meanings and that starts with every fresh day."
+msgstr ""
+
+#: Views\Home\Index.cshtml:19
+msgid "Learn More"
+msgstr ""
+
+#: Views\Home\Index.cshtml:82
+msgid "m"
+msgstr ""
+
+#: Views\Home\Index.cshtml:124
+msgid "Name"
+msgstr ""
+
+#: Views\Home\Index.cshtml:54
+msgid "Only four years of hard work greater the name of"
+msgstr ""
+
+#: Views\Home\Index.cshtml:52
+msgid "Our company considered today a greatest establishment that to present this pioneering by selling the unit expel of sexiness story that stile to be told."
+msgstr ""
+
+#: Views\Home\Index.cshtml:133
+msgid "Send"
+msgstr ""
+
+#: Views\Home\Index.cshtml:53
+msgid "Smartly Mr Chokri Shniti figured out client needs  and this was our result directly of being so successful and increasing this Cale and volume of our production and trade."
+msgstr ""
+
+#: Views\Home\Index.cshtml:84
+msgid "Surface"
+msgstr ""
+
+#: Views\Shared\_Layout.cshtml:46
+msgid "Team"
+msgstr ""
+
+#: Views\Home\Index.cshtml:63
+msgid "The leadership pf Mr Chokri Shniti target textil products of the best quality. Today the company over the world have there crafts at <b>STIFE</b> and its considered project partner in north Africa."
+msgstr ""
+
+#: Views\Home\Index.cshtml:55
+msgid "Today our company reached an employment potential that exceed 1000 employees an the planed cover an area of more than 22000 m"
+msgstr ""
+
+#: Views\Home\Index.cshtml:56
+msgid "took the initiative of exporting to Irak, India, Africa and Europe."
+msgstr ""
+
+#: Views\Home\Index.cshtml:16
+#: Views\Home\Index.cshtml:49
+#: Views\Home\Index.cshtml:116
+#: Views\Shared\_Layout.cshtml:11
+msgid "Tuniso-Italien company to export an import used clothes"
+msgstr ""
+
+#: Views\Home\Index.cshtml:57
+msgid "We have been basically working on satisfying our clients and partners through different clients of goods and services that contain underwear, male and female clothes, kids games, winter over coats and other items."
+msgstr ""
+
+#: Views\Home\Index.cshtml:117
+msgid "Z.I. EL BATEN, 3100 Kairouan Tunisie"
+msgstr ""
+
