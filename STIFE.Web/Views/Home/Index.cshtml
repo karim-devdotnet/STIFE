@@ -8,15 +8,14 @@
     <div id="video-sec" class="player" 
          @*data-property="{videoURL:'http://localhost:63470/Content/STIFE_ENGLISH.mp4',containment:'self',autoPlay:true, mute:true, startAt:0, opacity:1,mute: true,showControls:false}">*@
          data-property="{videoURL:'https://www.youtube.com/watch?v=lngtZS6NhGE',containment:'self',autoPlay:true, mute:true, startAt:0, opacity:1,mute: true,showControls:false}">
-        <div class="overlay">
+        <div class="overlay home-body">
             <!-- overylay class usage -->
             <div class="container">
                 <div style="display:none;" class="col-md-8 col-md-offset-2 text-center animate-bottom">
-
-                    <h1>STIFE</h1>
-                    <h3>Société Tuniso-Italienne de Friperie et Effilochage</h3>
+                    <h1 class="home-title">STIFE</h1>
+                    <h3 class="home-text">Société Tuniso-Italienne de Friperie et Effilochage</h3>
                     <br />
-                    <p class="p-cls">
+                    <p class="p-cls scroll-me">
                         <a href="#about" class="btn btn-custom btn-lg">@Resource.LERN_MORE</a>
                     </p>
                 </div>
@@ -27,15 +26,98 @@
     </div>
 <!--HOME SECTION END  -->
 
+<!-- Container (About Section) -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="text-center">
+                    About Us
+                </h2>
+            </div>
+        </div>
+        <br /><br />
+        <div class="row">
+            <div class="col-md-6 text-center">
+                @*<h1><a href="http://www.youtube.com/embed/9No-FiEInLA?autoplay=1&wmode=opaque&fs=1" class="youtube-media"><i class="glyphicon glyphicon-play-circle"></i> Watch the Video</a></h1>*@
+                <!-- 16:9-Seitenverhältnis -->
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lngtZS6NhGE"></iframe>
+                </div>
+            </div>
+            <div class="col-md-6 text-left">
+                <p>Tuniso-Italien company to export an import used clothes.</p>
+                <p>Its a story of pioneering that have a lot of meanings and that starts with every fresh day.</p>
+                <p>It has stapelt towards prosperity and offered the best to reach an international standards and accorders with modern civilization.</p>
+                <p>Our company considered today a greatest establishment that to present this pioneering by selling the unit expel of sexiness story that stile to be told.</p>
+                <p>Smartly Mr Chokri Shniti figured out client needs  and this was our result directly of being so successful and increasing this Cale and volume of our production and trade.</p>
+                <p>Only four years of hard work greater the name of <b>STIFE</b>.</p>
+                <p>Today our company reached an employment potential that exceed 1000 employees an the planed cover an area of more than 22000 m<sup>2</sup>.</p>
+                <p><b>STIFE</b> took the initiative of exporting to Irak, India, Africa and Europe.</p>
+                <p>We have been basically working on satisfying our clients and partners through different clients of goods and services that contain underwear, male and female clothes, kids games, winter over coats and other items.</p>
+                
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-12">
+                <p>The leadership pf Mr Chokri Shniti target textil products of the best quality. Today the company over the world have there crafts at <b>STIFE</b> and its considered project partner in north Africa.</p>
+                <p>All this ambled the company to take the lead in this field by starting production lines and whole planes that offer hundreds items.</p>
+            </div>
+        </div>
+        </div>
+    <div class="parallax-like">
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div>
+                            <strong>100+</strong>
+                            <p>
+                                Items
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div>
+                            <strong>22000 m<sup>2</sup></strong>
+                            <p>
+                                Surface
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 ">
+                        <div>
+                            <strong>1000+</strong>
+                            <p>
+                                Employees
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Container (Contact Section) -->
 <section id="contact">
-    <div class="container-fluid bg-grey">
+    <div class="container bg-grey">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="text-center">
+                    Contact Us
+                </h2>
+            </div>
+        </div>
+        <br /><br />
         <div class="row">
             <div class="col-sm-5">
-                <p>Contact us and we'll get back to you within 24 hours.</p>
-                <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-                <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-                <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+                <p>STIFE - SOCIETE TUNISO-ITALIENNE DE FRIPERIE ET EFFILOCHAGE</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> Z.I. EL BATEN, 3100 Kairouan Tunisie </p>
+                <p><span class="glyphicon glyphicon-phone"></span> +216 77 30 26 04</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> stife.info@gmail.com</p>
             </div>
             <div class="col-sm-7">
                 <div class="row">
@@ -55,57 +137,28 @@
             </div>
         </div>
     </div>
-
     <!-- Add Google Maps -->
-    <div id="googleMap" style="height:400px;width:100%;"></div>
-    @*<script>
-function myMap() {
-var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-var marker = new google.maps.Marker({position:myCenter});
-marker.setMap(map);
-}
-    </script>*@
-    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <div id="googleMap" style="width:100%;height:400px;"></div>
+
     <script>
-            var myCenter = new google.maps.LatLng(53.4577326, 9.9828083);
-            function initialize() {
-                var mapProp = {
-                    center: myCenter,
-                    zoom: 13,
-                    panControl: true,
-                    zoomControl: true,
-                    mapTypeControl: true,
-                    scaleControl: true,
-                    streetViewControl: true,
-                    overviewMapControl: true,
-                    rotateControl: true,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                };
-                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-
-                var marker = new google.maps.Marker({
-                    position: myCenter,
-                    animation: google.maps.Animation.DROP,
-                    //icon: '../content/img/logo.png'
-                    icon: 'https://maps.google.com/mapfiles/ms/micons/blue-dot.png'
-                });
-
-                marker.setMap(map);
-
-                var contentString = '<b>Société Tuniso-Italienne de Friperie et Effilochage</b><br/>';
-                contentString += '<span style="color:red;">Z.I. EL BATEN</span><br/>';
-                contentString += '<span style="color:red;">3100 Kairouan Tunisia</span><br/>';
-                contentString += '<span style="color:red;">Telefon: +216 77 30 26 04</span>';
-
-                var infowindow = new google.maps.InfoWindow({
-                    position: myCenter,
-                    content: contentString
-                });
-
-                infowindow.open(map, marker);
-            }
-            google.maps.event.addDomListener(window, 'load', initialize);
+function myMap() {
+    var myCenter = new google.maps.LatLng(35.711174, 10.000777);
+    var mapProp = {
+        center: myCenter,
+                zoom: 13,
+                panControl: true,
+                zoomControl: true,
+                mapTypeControl: true,
+                scaleControl: true,
+                streetViewControl: true,
+                overviewMapControl: true,
+                rotateControl: true,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            var marker = new google.maps.Marker({ position: myCenter });
+            marker.setMap(map);
+        }
     </script>
+
 </section>

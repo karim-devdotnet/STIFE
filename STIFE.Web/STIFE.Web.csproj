@@ -115,6 +115,7 @@
     <Content Include="Content\css\font-awesome.css" />
     <Content Include="Content\css\Site - Kopieren.css" />
     <Content Include="Content\img\home.png" />
+    <Content Include="Content\img\img4.png" />
     <Content Include="Content\img\logo.png" />
     <Content Include="Content\img\STIFE.jpg" />
     <Content Include="fonts\fontawesome-webfont.svg" />

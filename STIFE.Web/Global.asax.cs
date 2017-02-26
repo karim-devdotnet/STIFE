@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Web.Helpers;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
@@ -10,6 +11,9 @@ namespace STIFE.Web
 
         protected void Application_Start(object sender, EventArgs e)
         {
+            //Dieser Inhalt kann nicht in einem Frame angezeigt werden
+            //httpContext.Response.AddHeader("X-Frame-Options", "SAMEORIGIN") disabled
+            AntiForgeryConfig.SuppressXFrameOptionsHeader = true;
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
