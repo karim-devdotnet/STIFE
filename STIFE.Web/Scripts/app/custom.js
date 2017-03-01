@@ -4,6 +4,7 @@
 ========================================================  */
 
 $(document).ready(function () {
+
     var iScreenHeight = $(window).height();
     var iHeaderHeight = $('#header-area').innerHeight();
     $("#home .overlay").height(iScreenHeight - 100);
@@ -17,14 +18,15 @@ $(document).ready(function () {
         }, 1000, 'easeInOutQuad');
         event.preventDefault();
         });
-    // BACKGROUND VIDEO SCRIPTS
-        //$(function () {
-        //    $(".player").mb_YTPlayer(); // .player - class to add for playing video ( see the div above to understand)
-    //});
-        if (!jQuery.browser.mobile) {
-            $(".player").mb_YTPlayer();
-        }
+     //BACKGROUND VIDEO SCRIPTS
+        $(function () {
+            $(".player").mb_YTPlayer(); // .player - class to add for playing video ( see the div above to understand)
+    });
 
+    //if (!jQuery.browser.mobile) {
+        //$(".player").mb_YTPlayer();
+    //}
+    
     //LOADING
     //// loader-page den ganzen content bedecken lassen
     //var bPageCurtainHeight = $(document).outerHeight();
@@ -45,6 +47,31 @@ $(document).ready(function () {
     // Google Maps Scripts
     // When the window has finished loading create our google map below
     //google.maps.event.addDomListener(window, 'load', initialize);
+
+    //$('.thumbnail').click(function () {
+    //    $('.modal-body').empty();
+    //    var title = $(this).parent('a').attr("title");
+    //    $('.modal-title').html(title);
+    //    $($(this).parents('div').html()).appendTo('.modal-body');
+    //    $('#myModal').modal({ show: true });
+
+    //});
+
+    // Initialize and Configure Magnific Popup Lightbox Plugin
+    $('.popup-gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+        },
+        image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+        }
+    });
 });
 
 //function myMap() {

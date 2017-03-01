@@ -43,7 +43,7 @@
                     <li><a href="#about">[[[About]]]</a></li>
                     @*<li><a href="#services">SERVICES</a></li>*@
                     @*<li><a href="#works">WORKS</a></li>*@
-                    <li><a href="#team">[[[Team]]]</a></li>
+                    <li><a href="#portfolio">[[[Portfolio]]]</a></li>
                     <li><a href="#contact">[[[Contact]]]</a></li>
                     <li><a href="#impressum">[[[Impressum]]]</a></li>
                     @for (int i = 0; i < langs.Length; i++)
@@ -81,6 +81,25 @@
             <p>&copy; @DateTime.Now.Year - STIFE</p>
         </footer>
     </div>
+
+    <!--Modal-->
+    <div tabindex="-1" class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal">×</button>
+                    <h3 class="modal-title"></h3>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" data-dismiss="modal">[[[Close]]]</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

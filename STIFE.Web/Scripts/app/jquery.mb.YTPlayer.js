@@ -1060,11 +1060,11 @@ function onYouTubePlayerAPIReady() {
         var data = YTPlayer.opt;
         var playerBox = jQuery(YTPlayer.playerEl);
         var win = {};
-//		var el = !YTPlayer.isBackground ? data.containment : jQuery(window);
+		//var el = !YTPlayer.isBackground ? data.containment : jQuery(window);
         var el = YTPlayer.wrapper;
 
-        win.width = el.outerWidth();
-        win.height = el.outerHeight();
+        win.width = el.outerWidth() != 0 ? el.outerWidth() : jQuery(window).outerWidth();
+        win.height = el.outerHeight() != 0 ? el.outerHeight() : jQuery(window).outerHeight();
 
         var margin = 24;
         var overprint = 100;

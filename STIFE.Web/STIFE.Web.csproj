@@ -120,15 +120,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\bootstrap-custom.css" />
+    <Content Include="Content\css\common.css" />
     <Content Include="Content\css\font-awesome.css" />
-    <Content Include="Content\css\Site - Kopieren.css" />
+    <Content Include="Content\img\gallery\img12.png" />
+    <Content Include="Content\img\gallery\img16.png" />
+    <Content Include="Content\img\gallery\img21.png" />
+    <Content Include="Content\img\gallery\img3.png" />
+    <Content Include="Content\img\gallery\img6.png" />
+    <Content Include="Content\img\gallery\img8.png" />
     <Content Include="Content\img\home.png" />
     <Content Include="Content\img\img4.png" />
     <Content Include="Content\img\logo.png" />
     <Content Include="Content\img\STIFE.jpg" />
+    <Content Include="Content\css\magnific-popup.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="packages.config" />
     <Content Include="readme.txt" />
+    <Content Include="Scripts\jquery.magnific-popup.js" />
+    <Content Include="Scripts\jquery.magnific-popup.min.js" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -202,6 +211,7 @@
       <LastGenOutput>Resource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

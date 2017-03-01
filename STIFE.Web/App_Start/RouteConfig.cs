@@ -16,8 +16,8 @@ namespace STIFE.Web
             //    controller = "Home",
             //    action = "Index",
             //    id = "",
-            //    language = "de",
-            //    culture = "DE"
+            //    language = "en",
+            //    culture = "US"
             //});
 
             routes.MapRoute(

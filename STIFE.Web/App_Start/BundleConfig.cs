@@ -12,6 +12,7 @@ namespace STIFE.Web
                 "~/Scripts/bootstrap.js",
                 "~/Scripts/app/jquery.mb.YTPlayer.js",
                 "~/Scripts/app/jquery.easing.min.js",
+                "~/Scripts/jquery.magnific-popup.js",
                 "~/Scripts/app/custom.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
@@ -29,6 +30,9 @@ namespace STIFE.Web
             bundles.Add(new StyleBundle("~/Content/css").Include(
                  "~/Content/css/bootstrap.css",
                  "~/Content/css/bootstrap-custom.css",
+                 "~/Content/css/common.css",
+                 "~/Content/css/magnific-popup.css",
+                 "~/Content/css/font-awesome.css",
                  "~/Content/css/Site.css"));
 
 #if DEBUG

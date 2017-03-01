@@ -6,8 +6,19 @@
 
 <div id="home">
     <div id="video-sec" class="player" 
-         @*data-property="{videoURL:'http://localhost:63470/Content/STIFE_ENGLISH.mp4',containment:'self',autoPlay:true, mute:true, startAt:0, opacity:1,mute: true,showControls:false}">*@
-         data-property="{videoURL:'https://www.youtube.com/watch?v=lngtZS6NhGE',containment:'self',autoPlay:true, mute:true, startAt:0, opacity:1,mute: true,showControls:false}">
+         data-property="{videoURL:'https://www.youtube.com/watch?v=lngtZS6NhGE',
+         optimizeDisplay:true,
+         containment:'self',
+         autoPlay:true, 
+         mute:true, 
+         startAt:0, 
+         opacity:1,
+         mute: true,
+         showControls:false,
+         quality:'large',
+         realfullscreen:false
+         }">
+         @*data-property="{addRaster:true,videoURL:'lngtZS6NhGE',optimizeDisplay:true,containment:'self',autoPlay:true, mute:true, startAt:0, opacity:1,mute: true,showControls:false}">*@
         <div class="overlay home-body">
             <!-- overylay class usage -->
             <div class="container">
@@ -30,13 +41,14 @@
 <section id="about">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12">
-                <h2 class="text-center">
+            <div class="col-sm-12 text-center">
+                <h2>
                     [[[About Us]]]
                 </h2>
+                <hr class="star-primary">
             </div>
         </div>
-        <br /><br />
+        <br />
         <div class="row">
             <div class="col-md-6 text-center">
                 @*<h1><a href="http://www.youtube.com/embed/9No-FiEInLA?autoplay=1&wmode=opaque&fs=1" class="youtube-media"><i class="glyphicon glyphicon-play-circle"></i> Watch the Video</a></h1>*@
@@ -100,17 +112,96 @@
     </div>
 </section>
 
+<!-- Container (portfolio Section) -->
+<section id="portfolio" class="no-padding">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h2>
+                    [[[Portfolio]]]
+                </h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <br />
+        <div class="row popup-gallery no-gutter">
+            <div class="col-lg-4 col-sm-6">
+                <a href="~/Content/img/gallery/img12.png" class="portfolio-box">
+                    <img class="img-responsive" src="~/Content/img/gallery/img12.png">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <i class="fa fa-search-plus fa-5x"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="~/Content/img/gallery/img16.png" class="portfolio-box">
+                    <img class="img-responsive" src="~/Content/img/gallery/img16.png">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <i class="fa fa-search-plus fa-5x"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="~/Content/img/gallery/img21.png" class="portfolio-box">
+                    <img class="img-responsive" src="~/Content/img/gallery/img21.png">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <i class="fa fa-search-plus fa-5x"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="~/Content/img/gallery/img3.png" class="portfolio-box">
+                    <img class="img-responsive" src="~/Content/img/gallery/img3.png">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <i class="fa fa-search-plus fa-5x"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="~/Content/img/gallery/img6.png" class="portfolio-box">
+                    <img class="img-responsive" src="~/Content/img/gallery/img6.png">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <i class="fa fa-search-plus fa-5x"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="~/Content/img/gallery/img8.png" class="portfolio-box">
+                    <img class="img-responsive" src="~/Content/img/gallery/img8.png">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <i class="fa fa-search-plus fa-5x"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
 <!-- Container (Contact Section) -->
 <section id="contact">
     <div class="container bg-grey">
         <div class="row">
-            <div class="col-sm-12">
-                <h2 class="text-center">
+            <div class="col-sm-12 text-center">
+                <h2>
                     [[[Contact Us]]]
                 </h2>
+                <hr class="star-primary">
             </div>
         </div>
-        <br /><br />
+        <br />
         <div class="row">
             <div class="col-sm-5">
                 <p>STIFE - [[[Tuniso-Italien company to export an import used clothes]]]</p>
@@ -127,10 +218,10 @@
                         <input class="form-control" id="email" name="email" placeholder="[[[Email]]]" type="email" required>
                     </div>
                 </div>
-                <textarea class="form-control" id="comments" name="comments" placeholder="[[[Comment]]]" rows="5"></textarea><br>
+                <textarea class="form-control" id="message" name="message" placeholder="[[[Message]]]" rows="5"></textarea><br>
                 <div class="row">
                     <div class="col-sm-12 form-group">
-                        <button class="btn btn-default pull-right" type="submit">[[[Send]]]</button>
+                        <button class="btn btn-default pull-right" style="width:100%" type="submit">[[[Send]]]</button>
                     </div>
                 </div>
             </div>
